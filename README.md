@@ -3,7 +3,7 @@
 A practical automation script designed to resolve connectivity and launch issues with the Rockstar Games Launcher. This tool uses **Computer Vision (OCR)** and **UI Automation** to detect error states and automatically trigger retries until a successful launch is achieved.
 
 ## 🛠️ The Problem
-The Rockstar Games Launcher often fails to initialize or connect, requiring the user to manually click "Retry" multiple times. This script automates this tedious process, ensuring the application launches without manual intervention.
+The Rockstar Games Launcher often stops when downloading games (in my case it was GTA V), requiring the user to manually click "Retry" multiple times. This script automates this tedious process, ensuring the application launches without manual intervention.
 
 ## 🚀 Key Features
 
@@ -26,7 +26,7 @@ The Rockstar Games Launcher often fails to initialize or connect, requiring the 
 
 1. The script takes a screenshot of the active launcher window.
 2. It processes the image to extract text and searches for keywords like "Retry".
-3. If an error state is detected, it calculates the button coordinates and performs a click.
+3. If an error state is detected, it moves the mouse to the button coordinates and performs a click.
 4. The loop continues until the launcher moves past the error screen.
 
 ## 🔧 Requirements & Installation
